@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body{
+        font-family: "Poppins", sans-serif;
+    }
+.container{
+    width: 1166px;
+    margin: 0 auto;
+}
+
+/* ================= navbar start ================= */
+nav{
+    background: #eeedde;
+    padding-top: 50px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203229;
+    transition: 0.4s;
+    position: relative;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #f6762e;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+nav ul li:hover::after{
+    width: 70%;
+}
+
+nav ul li:hover{
+    font-weight: 600;
+}
+nav .navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ================= navbar end ================= */
+
+
+/* ================= banner start ================= */
+#banner{
+    background-color: #eeedde;
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+#banner .bannerWrapper{
+    display: flex;
+    align-items: center;
+}
+#banner .text_area{
+    width: 70%;
+}
+#banner .text_area h2{
+    font-size: 56px;
+    color: #203239;
+    font-weight: 600;
+    line-height: 150%;
+}
+#banner .text_area p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: rgba(32, 50, 57, 0.55);
+    width: 544px;
+    margin-top: 24px;
+}
+#banner .image_area{
+    width: 30%; 
+}
+#banner .text_area input{
+    width: 508px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    padding-left: 56px;
+}
+#banner .text_area input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(32, 50, 57, 0.55);
+    font-family: "Poppins", sans-serif;
+}
+#banner .bannerInputBox{
+    position: relative;
+    margin-top: 55px;
+    display: inline-block;
+}
+#banner .text_area .bannerIcon{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+#banner .text_area button{
+    border: none;
+    background: #ffffff;
+    font-size: 16;
+    font-weight: 300;
+    color: rgba(32, 50, 57, 0.55);
+    padding: 25px 37px 25px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 15px;
+}
+/* ================= bannder end ================= */
+/* ================= properti start ================== */
+#properti{
+    padding: 100px 0;
+}
+#properti h2{
+    font-size: 36px;
+    color: #203239;
+    font-weight: 600;
+    line-height: 150%;
+    width: 533px;
+    margin-bottom: 64px;
+}
+.propertiWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.properti_item{
+    width: 300px;
+    padding: 20px 33px;
+    position: relative;
+    transition: 0.5s;
+}
+.properti_item:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+.properti_item h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    margin-bottom: 8px;
+}
+.properti_item p{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(32, 50, 57, 0.55);
+    width: 232px;
+    line-height: 30px;
+    margin-bottom: 78px;
+}
+.properti_item a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    text-decoration: none;
+}
+.properti_item a .arrow{
+    margin-left: 8px;
+}
+.propertiSubWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.propertiSubWrapper h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+}
+.propertiSubWrapper::after{
+    content: '';
+    width: 8px;
+    height: 30px;
+    background: #FF7527;
+    top: 17px;
+    left: 0;
+    position: absolute;
+    border-radius: 5px;
+}
+/* ================= properti end ================== */
+
+
+/* ================= residen start ================== */
+#residen{
+    background: #eeedde;
+    padding-top: 67px;
+    padding-bottom: 163px;
+
+}
+#residen .title h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+}
+#residen .title{
+    margin-bottom: 64px;
+}
+#residen .title h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+}
+.residen_image{
+    width: 50%;
+    position: relative;
+}
+.residen_textarea{
+    width: 50%;
+}
+.residen_wrapper{
+    display: flex;
+}
+.residen_textarea h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+    width: 507px;
+    margin-bottom: 24px;
+}
+.residen_textarea p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+.residen_textarea a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #203239;
+    border: 1px solid #203239;
+    text-decoration: none;
+    padding: 13px 41px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.residen_textarea a:hover{
+    background: #203239;
+    color: #fff;
+}
+.residenbtnIcon{
+    margin-right: 12px;
+}
+.residen_textarea a:last-child{
+    margin-left: 48px;
+}
+.residen_image img:last-child{
+    position: absolute;
+    top: 60px;
+    left: 167px;
+}
+/* ================= residen end ================== */
+
+
+
+/* ================= Kota start ================== */
+#kota{
+    padding: 68px 0;
+}
+.kota_title h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+    margin-bottom: 8px;
+}
+.kota_title h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 64px;
+}
+.kota_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.kota_items img{
+    margin-bottom: 16px;
+    transition: 0.5s;
+}
+.kota_items:hover img{
+    border-radius: 10px;
+}
+.kota_items h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 8px;
+}
+.kota_items p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    line-height: 30px;
+    width: 356px;
+}
+/* ================= Kota end ================== */
+
+/* ==================== footer top start ===================== */
+#footer_top{
+    background: #eeedde;
+    padding: 48px 0;
+}
+.footer_wrapper{
+    display: flex;
+}
+.footer_top_title h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 74px;
+}
+.contact_info h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    margin-bottom: 8px;
+}
+.contact_info p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #203239;
+    margin-bottom: 8px;
+}
+.contact_info a{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 17px;
+    background: #203239;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 27px;
+    margin-left: -15px;
+}
+.contact{
+    display: flex;
+    width: 274px;
+    height: 167px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 41px;
+    box-sizing: border-box;
+    gap: 24px;
+    margin-right: 24px;
+}
+.footer_top_left{
+    display: flex;
+    
+}
+
+.footer_top_right{
+    width: 50%;
+    text-align: center;
+}
+.footer_top_right h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #203239;
+    margin-bottom: 69px;
+}
+/* ==================== footer top end ===================== */
+
+
+#footer_bottom{
+    background: #203239;
+    padding: 31px 0;
+}
+.bottom_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_bottom_right .fa-brands{
+    color: white;
+    margin-left: 64px;
+}
+
